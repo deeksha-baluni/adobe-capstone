@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Adobe Clubs — Internal community platform for the Bengaluru chapter." />
+  <title>Adobe Clubs — Bengaluru</title>
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Global design tokens + resets -->
+  <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./styles/layout.css" />
+
+  <!-- Minimal skeleton to prevent FOUC before blocks load -->
+  <style>
+    body.loading { visibility: hidden; }
+    body.loading .nav { visibility: visible; background: var(--color-background-primary); height: 52px; border-bottom: 1px solid var(--color-border-tertiary); }
+  </style>
+</head>
+<body class="loading" id="app">
+
+  <!-- ═══════════════════════════════════════
+       BLOCK: nav
+       EDS equivalent: header block
+  ════════════════════════════════════════ -->
+  <header id="block-nav" class="nav" role="banner"></header>
+
+  <main role="main">
+
+    <!-- ═══════════════════════════════════════
+         BLOCK: hero
+         EDS equivalent: hero block / section
+    ════════════════════════════════════════ -->
+    <div id="block-hero" class="hero"></div>
+
+    <!-- ═══════════════════════════════════════
+         BLOCK: clubs-grid
+         EDS equivalent: cards block (4-col)
+    ════════════════════════════════════════ -->
+    <section id="block-clubs-grid" class="section" aria-label="Featured clubs"></section>
+
+    <!-- ═══════════════════════════════════════
+         BLOCK: activity-feed + announcements
+         Two-column layout section
+         EDS equivalent: columns block (2-col)
+    ════════════════════════════════════════ -->
+    <section class="section two-col-section" aria-label="Activity and announcements">
+      <div class="two-col-inner">
+        <div id="block-activity-feed" class="two-col-main"></div>
+        <div id="block-announcements" class="two-col-aside"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         BLOCK: merch-strip
+         EDS equivalent: cards block (4-col, commerce)
+    ════════════════════════════════════════ -->
+    <section id="block-merch-strip" class="section" aria-label="Club merch spotlight"></section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       Footer
+       EDS equivalent: footer block
+  ════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <span>Adobe Clubs Platform · Internal use only · Bengaluru</span>
+      <span>Powered by Adobe EDS</span>
+    </div>
+  </footer>
+
+  <!-- Page orchestrator — loads blocks, injects data -->
+  <!-- EDS note: replace with /scripts/scripts.js -->
+  <script type="module" src="./blocks.js"></script>
+
+</body>
+</html>

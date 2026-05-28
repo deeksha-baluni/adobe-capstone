@@ -1,0 +1,174 @@
+{
+  "user": {
+    "initials": "AJ",
+    "name": "Arjun J.",
+    "role": "member",
+    "joinedClubs": ["adobe-lens", "dev-guild"]
+  },
+  "stats": {
+    "clubs": 14,
+    "members": "420+",
+    "events": 8
+  },
+  "events": [
+    {
+      "id": "evt-1",
+      "month": "JUN",
+      "day": "4",
+      "title": "Photography Walk — MG Road",
+      "club": "Adobe Lens Club",
+      "time": "9:00 AM",
+      "type": "In-person"
+    },
+    {
+      "id": "evt-2",
+      "month": "JUN",
+      "day": "7",
+      "title": "GenAI Design Sprint",
+      "club": "Adobe Creatives",
+      "time": "2:00 PM",
+      "type": "Virtual"
+    },
+    {
+      "id": "evt-3",
+      "month": "JUN",
+      "day": "12",
+      "title": "Hackathon Kickoff 2025",
+      "club": "Adobe Dev Club",
+      "time": "10:00 AM",
+      "type": "In-person"
+    }
+  ],
+  "clubs": [
+    {
+      "id": "adobe-lens",
+      "name": "Adobe Lens",
+      "icon": "📷",
+      "iconBg": "#fff0ef",
+      "accent": "#FA0F00",
+      "members": 88,
+      "tag": "Photography",
+      "desc": "Capture Bengaluru through a lens. Weekly shoots, editing tips, and photo walks for all skill levels."
+    },
+    {
+      "id": "dev-guild",
+      "name": "Dev Guild",
+      "icon": "💻",
+      "iconBg": "#e3f2fd",
+      "accent": "#0070d1",
+      "members": 112,
+      "tag": "Engineering",
+      "desc": "Hackathons, side projects, and engineering culture for builders at Adobe."
+    },
+    {
+      "id": "sportzone",
+      "name": "SportZone",
+      "icon": "⚽",
+      "iconBg": "#e8f5e9",
+      "accent": "#2e7d32",
+      "members": 54,
+      "tag": "Sports",
+      "desc": "Cricket, football, badminton leagues and wellness activities across floors."
+    },
+    {
+      "id": "adobe-creatives",
+      "name": "Adobe Creatives",
+      "icon": "🎨",
+      "iconBg": "#f3e5f5",
+      "accent": "#7b1fa2",
+      "members": 79,
+      "tag": "Design",
+      "desc": "Design jams, portfolio showcases, and creative experiments for designers."
+    }
+  ],
+  "feed": [
+    {
+      "id": "feed-1",
+      "initials": "RK",
+      "avatarColor": "#c62800",
+      "text": "<strong>Rohan K.</strong> posted new photos in <strong>Adobe Lens</strong> — \"Sunset shoot from Nandi Hills 🌄\"",
+      "meta": "Adobe Lens · 2h ago"
+    },
+    {
+      "id": "feed-2",
+      "initials": "PP",
+      "avatarColor": "#0070d1",
+      "text": "<strong>Priya P.</strong> registered for <strong>GenAI Design Sprint</strong> — 14 spots left",
+      "meta": "Adobe Creatives · 4h ago"
+    },
+    {
+      "id": "feed-3",
+      "initials": "SM",
+      "avatarColor": "#2e7d32",
+      "text": "<strong>SportZone</strong> posted the cricket league schedule for June. Sign-ups open!",
+      "meta": "SportZone · 6h ago"
+    },
+    {
+      "id": "feed-4",
+      "initials": "JD",
+      "avatarColor": "#7b1fa2",
+      "text": "<strong>Dev Guild</strong> shared recording from last week's AI tools demo session",
+      "meta": "Dev Guild · 1d ago"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ann-1",
+      "dot": "#FA0F00",
+      "title": "Club merch orders close Jun 10",
+      "meta": "Admin · Today"
+    },
+    {
+      "id": "ann-2",
+      "dot": "#0070d1",
+      "title": "New resource hub section live",
+      "meta": "Admin · 2 days ago"
+    },
+    {
+      "id": "ann-3",
+      "dot": "#2e7d32",
+      "title": "Summer interns onboarding to clubs",
+      "meta": "HR · 3 days ago"
+    },
+    {
+      "id": "ann-4",
+      "dot": "#7b1fa2",
+      "title": "Quarterly newsletter published",
+      "meta": "Comms · 1 week ago"
+    }
+  ],
+  "merch": [
+    {
+      "id": "merch-1",
+      "icon": "👕",
+      "iconBg": "#fff0ef",
+      "name": "Adobe Lens Tee",
+      "sub": "Unisex · S–XXL",
+      "price": "₹599"
+    },
+    {
+      "id": "merch-2",
+      "icon": "🧢",
+      "iconBg": "#e3f2fd",
+      "name": "Dev Guild Cap",
+      "sub": "Adjustable",
+      "price": "₹399"
+    },
+    {
+      "id": "merch-3",
+      "icon": "🖊️",
+      "iconBg": "#f3e5f5",
+      "name": "Creatives Sticker Set",
+      "sub": "12 stickers",
+      "price": "₹149"
+    },
+    {
+      "id": "merch-4",
+      "icon": "🏆",
+      "iconBg": "#e8f5e9",
+      "name": "SportZone Trophy Mug",
+      "sub": "Ceramic · 350ml",
+      "price": "₹299"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+/* ── Two-column layout (activity feed + announcements) ── */
+.two-col-inner {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 12px;
+}
+.two-col-main  { min-width: 0; }
+.two-col-aside { min-width: 0; }
+
+@media (max-width: 760px) {
+  .two-col-inner { grid-template-columns: 1fr; }
+}
+
+/* ── Site footer ── */
+.site-footer {
+  background: var(--color-background-primary);
+  border-top: 1px solid var(--color-border-tertiary);
+  padding: 14px 24px;
+}
+.footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+@media (max-width: 520px) {
+  .footer-inner { flex-direction: column; gap: 4px; text-align: center; }
+}
