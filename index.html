@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Adobe Clubs — Internal community platform for the Bengaluru chapter." />
+  <title>Adobe Clubs — Bengaluru</title>
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Global design tokens + resets -->
+  <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./styles/layout.css" />
+
+  <!-- Minimal skeleton to prevent FOUC before blocks load -->
+  <style>
+    body.loading { visibility: hidden; }
+    body.loading .nav { visibility: visible; background: transparent; height: auto; border-bottom: none; padding: 12px 24px; }
+  </style>
+</head>
+<body class="loading" id="app">
+
+  <header id="block-nav" class="nav" role="banner"></header>
+
+  <main role="main">
+
+    <div id="block-hero" class="hero"></div>
+
+    <section id="block-clubs-grid" class="section" aria-label="Featured clubs"></section>
+
+    <section id="block-upcoming-events" class="section" aria-label="Upcoming events"></section>
+
+    <section id="block-merch-strip" class="section" aria-label="Club merch spotlight"></section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+
+    <!-- Top: brand + link columns -->
+    <div class="footer-top">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" aria-label="Adobe Clubs home">
+          <div class="footer-adobe-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="white">
+              <path d="M13.966 22.624l-1.69-4.281H8.122l3.892-9.144 5.662 13.425zM.411 22.624L8.886 1.376H15.28L6.794 22.624zM23.589 22.624h-6.403l-2.99-7.573 2.29-5.403z"/>
+            </svg>
+          </div>
+          <span>Adobe Clubs</span>
+        </a>
+        <p class="footer-tagline">
+          The internal community platform for Adobe's Bengaluru chapter.
+          Connecting people through clubs, events, and shared passions.
+        </p>
+        <div class="footer-badge">Internal use only &middot; Bengaluru</div>
+      </div>
+
+      <!-- Link columns -->
+      <div class="footer-links-group">
+
+        <div class="footer-col">
+          <h3 class="footer-col-heading">Explore</h3>
+          <ul class="footer-col-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-heading">Community</h3>
+          <ul class="footer-col-links">
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="#">Leaderboard</a></li>
+            <li><a href="#">Member map</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-heading">Support</h3>
+          <ul class="footer-col-links">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Start a club</a></li>
+            <li><a href="#">Contact admin</a></li>
+            <li><a href="#">Give feedback</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="footer-divider"></div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2025 Adobe Inc. &middot; Internal platform &middot; Not for external distribution</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Accessibility</a>
+      </div>
+      <span class="footer-powered">Powered by Adobe EDS</span>
+    </div>
+
+  </footer>
+
+  <script type="module" src="./blocks.js"></script>
+
+</body>
+</html>
